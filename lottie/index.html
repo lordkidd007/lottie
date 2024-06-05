@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <div id="Con" style="display: flex; flex-direction: column ;">
+        <!-- <span>New111.json</span>
+    <lottie-player src="./New111.json" background="#ffffff" speed="1" style="width: 300px; height: 300px;" hover loop
+        controls autoplay></lottie-player> -->
+
+    </div>
+    <input type="button" onclick="clickNext(0)" value="←">
+    <input type="button" onclick="clickNext(1)" value="→">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+    <script>
+
+        let iIndex = -1;
+        let lstFileName = ["1_10_10.json", "1_11_11.json", "1_12_12.json", "1_13_13.json", "1_13_13_1.json", "1_13_13_2.json", "1_13_13_3.json", "1_13_13_4.json", "1_13_13_5.json", "1_14_14.json", "1_15_15.json", "1_16_16.json", "1_17_17.json", "1_18_18.json", "1_19_19.json", "1_1_1.json", "1_20_20.json", "1_21_21.json", "1_22_22.json", "1_23_23.json", "1_24_24.json", "1_25_25.json", "1_26_26.json", "1_27_27.json", "1_28_28.json", "1_29_29.json", "1_2_2.json", "1_30_30.json", "1_31_31.json", "1_32_32.json", "1_33_33.json", "1_33_33_1.json", "1_33_33_2.json", "1_33_33_3.json", "1_33_33_4.json", "1_33_33_5.json", "1_33_33_6.json", "1_34_34.json", "1_34_34_1.json", "1_34_34_2.json", "1_34_34_3.json", "1_35_35.json", "1_36_36.json", "1_37_37.json", "1_38_38.json", "1_38_38_0.json", "1_39_39.json", "1_39_39_0.json", "1_3_3.json", "1_40_40.json", "1_40_40_1.json", "1_40_40_2.json", "1_40_40_3.json", "1_40_40_4.json", "1_40_40_5.json", "1_40_40_6.json", "1_40_surprise_100.json", "1_40_surprise_100_padLandScape.json", "1_41_41.json", "1_4_4.json", "1_5_5.json", "1_6_6.json", "1_7_7.json", "1_8_8.json", "1_9_9.json", "2_10_10.json", "2_1_1.json", "2_2_2.json", "2_3_3.json", "2_4_4.json", "2_5_5.json", "2_6_6.json", "2_7_7.json", "2_8_8.json", "2_9_9.json", "3_10_10.json", "3_1_1.json", "3_2_2.json", "3_3_3.json", "3_4_4.json", "3_5_5.json", "3_6_6.json", "3_7_7.json", "3_8_8.json", "3_9_9.json", "4_10_10.json", "4_1_1.json", "4_2_2.json", "4_3_3.json", "4_4_4.json", "4_5_5.json", "4_6_6.json", "4_7_7.json", "4_8_8.json", "4_9_9.json", "5_10_10.json", "5_1_1.json", "5_2_2.json", "5_3_3.json", "5_4_4.json", "5_5_5.json", "5_6_6.json", "5_7_7.json", "5_8_8.json", "5_9_9.json", "6_10_10.json", "6_1_1.json", "6_2_2.json", "6_3_3.json", "6_4_4.json", "6_5_5.json", "6_6_6.json", "6_7_7.json", "6_8_8.json", "6_9_9.json"];
+
+        let ConDiv = document.getElementById("Con");
+
+
+        function clickNext(isNext) {
+            if (isNext)
+                iIndex++;
+            else
+                iIndex--;
+
+            if (iIndex > lstFileName.length - 1)
+                iIndex = lstFileName.length - 1
+            if (iIndex < 0)
+                iIndex = 0
+            console.log(iIndex);
+
+            const element = lstFileName[iIndex];
+            console.log(element);
+            ConDiv.innerHTML = '<span>' + element + '</span>    <lottie-player src="./' + element + '" background="#ffffff" speed="1" style="width: 300px; height: 300px;" hover loop        controls autoplay></lottie-player>';
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
